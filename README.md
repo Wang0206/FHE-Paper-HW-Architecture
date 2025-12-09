@@ -155,7 +155,7 @@ A comprehensive curated list of research papers on Fully Homomorphic Encryption 
 ### DATE 2018
 - **Title:** Hardware Acceleration of Fully Homomorphic Encryption  
   **Authors:** Roy et al.  
-  **Link:** https://ieeexplore.ieee.org/document/8342013  
+  **Link:** https://doi.org/10.1109/DATE.2018.8342013  
   **Key Innovation:** Modular arithmetic accelerator with optimized polynomial operations
 
 ---

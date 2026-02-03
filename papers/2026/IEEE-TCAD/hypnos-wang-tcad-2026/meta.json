@@ -2,7 +2,7 @@
   "title": "Hypnos: A Hardware-Software Co-Design Framework for Memory-Efficient Homomorphic Processing",
   "authors": "Haoxuan Wang et al.",
   "year": 2026,
-  "venue": "IEEE TCAD",
+  "venue": "IEEE-TCAD",
   "slug": "hypnos-wang-tcad-2026",
   "url": "TODO: DOI or publisher URL",
   "key_innovation": "Introduces a Homomorphic Encryption Paged Management Unit (HEPMU) to manage memory at the granularity of individual RNS components, significantly reducing memory fragmentation and PCIe transfer overhead.",

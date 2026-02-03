@@ -5,7 +5,37 @@ A comprehensive curated list of research papers on Fully Homomorphic Encryption 
 **Time Coverage:** 2015 - Present  
 **Target Conferences:** ISCA, MICRO, HPCA, ASPLOS, DAC, DATE, FPGA
 
-**How to contribute:** See [CONTRIBUTING.md](CONTRIBUTING.md). For adding a paper, prefer using `python3 scripts/add_paper.py`.
+**How to contribute:** See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## LLM prompt example (web UI)
+
+If you use a web-based LLM (ChatGPT/Claude/etc.), you can upload the paper PDF and ask it to fill in our templates.
+
+Copy/paste this prompt and attach the PDF:
+
+```text
+You are helping me add a research paper to a GitHub repository about FHE hardware accelerators.
+
+I uploaded the original paper PDF. Read it and produce TWO outputs:
+
+Output A: meta.json (strict JSON)
+- Must include keys: title, authors, year, venue, slug, url, key_innovation
+- Optional keys: doi, pdf_url, hardware, schemes, tags
+- slug must be lowercase kebab-case
+- Do NOT invent numbers. If something is unknown, omit the key or use "TODO".
+
+Output B: README.md (Markdown)
+- Follow the section structure from this template:
+  https://github.com/Wang0206/FHE-Paper-HW-Architecture/blob/main/templates/paper_readme.md
+- Do NOT paste the paper verbatim. Write your own summary.
+- Results: only include numeric results if they appear in the PDF; otherwise write TODO.
+
+Return the two outputs clearly separated, labeled exactly:
+--- meta.json ---
+{...}
+--- README.md ---
+# ...
+```
 
 ## Table of Contents
 
@@ -36,7 +66,8 @@ A comprehensive curated list of research papers on Fully Homomorphic Encryption 
 - `README.md`: Project overview + auto-generated index
 - `papers/<year>/<venue>/<slug>/meta.json`: Paper metadata (used to build index)
 - `papers/<year>/<venue>/<slug>/README.md`: Per-paper summary
-- `scripts/`: Helper scripts for adding papers and rebuilding the index
+- `templates/`: Templates for `meta.json` and per-paper `README.md`
+- `scripts/`: Helper scripts for validating and rebuilding the index
 
 ---
 

@@ -58,39 +58,58 @@ Notes:
 
 ## Recommended workflow (scripts)
 
-### Option A (recommended): add with helper script
+### Step 1: Draft files using templates (recommended)
 
-1. Add a new paper folder + files:
+We intentionally keep generation **manual + transparent**:
+
+1. Use a web-based LLM (ChatGPT/Claude/etc.) and upload the paper PDF.
+2. Ask it to fill in our templates:
+
+- Template A: `templates/meta.json.template`
+- Template B: `templates/paper_readme.md`
+
+The root `README.md` contains a ready-to-copy prompt example.
+
+### Step 2: Put the files into the repo
+
+Create a folder:
+
+`papers/<year>/<venue>/<slug>/`
+
+Then add:
+
+- `meta.json`
+- `README.md`
+
+### Step 3: Validate + rebuild the root index
 
 ```bash
-python3 scripts/add_paper.py \
-  --year 2024 --venue MICRO \
-  --slug reed-chiplet-accelerator \
-  --title "REED: Chiplet-Based Accelerator for Fully Homomorphic Encryption" \
-  --authors "Kim et al." \
-  --url "https://doi.org/10.1145/3613424.3623779" \
-  --key-innovation "Chiplet-based architecture with inter-chiplet communication optimization for FHE operations"
-```
-
-2. Rebuild the root index:
-
-```bash
+python3 scripts/validate_repo.py
 python3 scripts/build_index.py
 ```
 
-### Option B: manual
+## Optional: submit a PR via script
 
-Create `papers/<year>/<venue>/<slug>/meta.json` and `README.md`, then run `python3 scripts/build_index.py`.
+If you have the repo cloned locally (with `.git`) you can use:
 
-## Optional: LLM-generated README
+```bash
+python3 scripts/submit_pr.py \
+  --paper-dir papers/<year>/<venue>/<slug> \
+  --branch add-<slug> \
+  --message "Add <slug>" \
+  --push
+```
 
-If you want the script to draft a per-paper README using an LLM, set:
+If you also have GitHub CLI (`gh`) installed and authenticated:
 
-- `OPENAI_API_KEY`
-- (optional) `OPENAI_BASE_URL` (default: `https://api.openai.com/v1`)
-- (optional) `OPENAI_MODEL` (default: `gpt-4.1-mini`)
-
-Then re-run `scripts/generate_paper_readme.py` or use `scripts/add_paper.py --llm`.
+```bash
+python3 scripts/submit_pr.py \
+  --paper-dir papers/<year>/<venue>/<slug> \
+  --branch add-<slug> \
+  --message "Add <slug>" \
+  --push --pr --pr-title "Add <paper title>" \
+  --pr-body "Adds meta.json + per-paper README; rebuilds index."
+```
 
 ## Pre-PR checks
 

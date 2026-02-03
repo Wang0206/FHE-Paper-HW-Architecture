@@ -80,6 +80,15 @@ Run: python3 scripts/build_index.py
 
 # Index (by Year)
 
+## 2026
+
+### IEEE-TCAD 2026
+- **Title:** [Hypnos: A Hardware-Software Co-Design Framework for Memory-Efficient Homomorphic Processing](papers/2026/IEEE-TCAD/hypnos-wang-tcad-2026/README.md)  
+  **Authors:** Haoxuan Wang et al.  
+  **Link:** TODO: DOI or publisher URL  
+  **Key Innovation:** Introduces a Homomorphic Encryption Paged Management Unit (HEPMU) to manage memory at the granularity of individual RNS components, significantly reducing memory fragmentation and PCIe transfer overhead.
+
+
 ## 2024
 
 ### DAC 2024
@@ -394,6 +403,15 @@ Run: python3 scripts/build_index.py
   **Authors:** Cousins et al.  
   **Link:** https://doi.org/10.1109/HPCA.2016.7446268  
   **Key Innovation:** Custom datapath for polynomial arithmetic with optimized NTT
+
+
+## IEEE-TCAD
+
+### IEEE-TCAD 2026
+- **Title:** [Hypnos: A Hardware-Software Co-Design Framework for Memory-Efficient Homomorphic Processing](papers/2026/IEEE-TCAD/hypnos-wang-tcad-2026/README.md)  
+  **Authors:** Haoxuan Wang et al.  
+  **Link:** TODO: DOI or publisher URL  
+  **Key Innovation:** Introduces a Homomorphic Encryption Paged Management Unit (HEPMU) to manage memory at the granularity of individual RNS components, significantly reducing memory fragmentation and PCIe transfer overhead.
 
 
 ## ISCA

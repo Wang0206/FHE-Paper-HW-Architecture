@@ -69,8 +69,7 @@ def main() -> None:
         raise SystemExit("No changes detected. Add your paper files first.")
 
     # Validate and rebuild index
-    run(["python3", "scripts/validate_repo.py"])
-    run(["python3", "scripts/build_index.py"])
+    run(["python3", "scripts/rebuild.py"])
 
     # Stage files
     stage_paths: list[str] = []

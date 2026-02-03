@@ -84,8 +84,7 @@ Then add:
 ### Step 3: Validate + rebuild the root index
 
 ```bash
-python3 scripts/validate_repo.py
-python3 scripts/build_index.py
+python3 scripts/rebuild.py
 ```
 
 ## Optional: submit a PR via script
@@ -116,6 +115,5 @@ python3 scripts/submit_pr.py \
 Run:
 
 ```bash
-python3 scripts/validate_repo.py
-python3 scripts/build_index.py --check
+python3 scripts/rebuild.py --check
 ```

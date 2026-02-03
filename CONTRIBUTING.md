@@ -117,3 +117,7 @@ Run:
 ```bash
 python3 scripts/rebuild.py --check
 ```
+
+CI note:
+
+- GitHub Actions will run the same check on PRs/pushes; if it fails, run `python3 scripts/rebuild.py` locally and commit the updated `README.md`.

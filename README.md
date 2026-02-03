@@ -7,6 +7,16 @@ A comprehensive curated list of research papers on Fully Homomorphic Encryption 
 
 **How to contribute:** See [CONTRIBUTING.md](CONTRIBUTING.md). For adding a paper, prefer using `python3 scripts/add_paper.py`.
 
+## Table of Contents
+
+- [Repository Layout](#repository-layout)
+- [Index (by Year)](#index-by-year)
+- Years: [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017) · [2016](#2016) · [2015](#2015)
+- [Index (by Venue)](#index-by-venue)
+- Venues: [ASPLOS](#asplos) · [DAC](#dac) · [DATE](#date) · [HPCA](#hpca) · [ISCA](#isca) · [MICRO](#micro)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Repository Layout
 
 - `README.md`: Project overview + auto-generated index

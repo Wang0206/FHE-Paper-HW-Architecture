@@ -416,6 +416,10 @@ This list is actively maintained. If you know of any FHE hardware accelerator pa
 
 If you're submitting a PR, please follow [CONTRIBUTING.md](CONTRIBUTING.md) to ensure the paper metadata and per-paper README are generated consistently.
 
+**Star history:**
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Wang0206/FHE-Paper-HW-Architecture&type=Date)](https://star-history.com/#Wang0206/FHE-Paper-HW-Architecture&Date)
+
 ## License
 
 This curated list is available under CC0 1.0 Universal (public domain).

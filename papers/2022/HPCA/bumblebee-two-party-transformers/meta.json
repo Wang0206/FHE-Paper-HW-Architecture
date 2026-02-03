@@ -1,0 +1,10 @@
+{
+  "title": "BumbleBee: Secure Two-party Inference Framework for Large Transformers",
+  "authors": "Lu et al.",
+  "year": 2022,
+  "venue": "HPCA",
+  "slug": "bumblebee-two-party-transformers",
+  "url": "https://doi.org/10.1109/HPCA53966.2022.00078",
+  "doi": "10.1109/HPCA53966.2022.00078",
+  "key_innovation": "Two-party computation framework for transformer models using FHE primitives"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Accelerating Somewhat Homomorphic Evaluation using FPGAs",
+  "authors": "Doroz et al.",
+  "year": 2015,
+  "venue": "DAC",
+  "slug": "accelerating-somewhat-homomorphic-fpgas",
+  "url": "https://doi.org/10.1145/2744769.2744877",
+  "doi": "10.1145/2744769.2744877",
+  "key_innovation": "FPGA implementation with pipelined NTT and modular reduction units"
+}

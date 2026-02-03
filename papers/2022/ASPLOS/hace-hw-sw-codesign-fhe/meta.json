@@ -1,0 +1,10 @@
+{
+  "title": "HACE: Hardware-Software Co-Design for Fully Homomorphic Encryption Applications",
+  "authors": "Morshed et al.",
+  "year": 2022,
+  "venue": "ASPLOS",
+  "slug": "hace-hw-sw-codesign-fhe",
+  "url": "https://doi.org/10.1145/3503222.3507728",
+  "doi": "10.1145/3503222.3507728",
+  "key_innovation": "Software-hardware interface with automated operator fusion for FHE workloads"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Phantom: General-Purpose Tunable Privacy-Preserving Neural Network Inference Using Homomorphic Encryption",
+  "authors": "Ghodsi et al.",
+  "year": 2022,
+  "venue": "MICRO",
+  "slug": "phantom-pp-nn-inference",
+  "url": "https://doi.org/10.1109/MICRO56248.2022.00059",
+  "doi": "10.1109/MICRO56248.2022.00059",
+  "key_innovation": "Configurable privacy levels with hybrid encryption schemes for neural networks"
+}

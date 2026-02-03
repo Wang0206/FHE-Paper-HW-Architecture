@@ -1,0 +1,10 @@
+{
+  "title": "A Custom Accelerator for Homomorphic Encryption Applications",
+  "authors": "Cousins et al.",
+  "year": 2016,
+  "venue": "HPCA",
+  "slug": "custom-accelerator-homomorphic-encryption",
+  "url": "https://doi.org/10.1109/HPCA.2016.7446268",
+  "doi": "10.1109/HPCA.2016.7446268",
+  "key_innovation": "Custom datapath for polynomial arithmetic with optimized NTT"
+}

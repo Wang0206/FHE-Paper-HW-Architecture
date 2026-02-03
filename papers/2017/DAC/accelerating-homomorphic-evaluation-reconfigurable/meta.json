@@ -1,0 +1,10 @@
+{
+  "title": "Accelerating Homomorphic Evaluation on Reconfigurable Hardware",
+  "authors": "Cousins et al.",
+  "year": 2017,
+  "venue": "DAC",
+  "slug": "accelerating-homomorphic-evaluation-reconfigurable",
+  "url": "https://doi.org/10.1145/3061639.3062259",
+  "doi": "10.1145/3061639.3062259",
+  "key_innovation": "Reconfigurable architecture supporting multiple FHE schemes"
+}

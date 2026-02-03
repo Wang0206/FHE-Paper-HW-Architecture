@@ -1,0 +1,10 @@
+{
+  "title": "GAZELLE: A Low Latency Framework for Secure Neural Network Inference",
+  "authors": "Juvekar et al.",
+  "year": 2019,
+  "venue": "ASPLOS",
+  "slug": "gazelle-secure-nn-inference",
+  "url": "https://doi.org/10.1145/3297858.3304017",
+  "doi": "10.1145/3297858.3304017",
+  "key_innovation": "Hybrid protocol combining homomorphic encryption with garbled circuits for neural networks"
+}

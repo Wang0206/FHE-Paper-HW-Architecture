@@ -5,6 +5,10 @@ A comprehensive curated list of research papers on Fully Homomorphic Encryption 
 **Time Coverage:** 2015 - Present  
 **Target Conferences:** ISCA, MICRO, HPCA, ASPLOS, DAC, DATE, FPGA
 
+> **Status Notice (Repository under construction):** This repository is currently being reconstructed. Please **do not** submit PRs that add/update paper entries (under `papers/`) for now. PRs related to **repository architecture**, **scripts**, **templates**, and **tooling** are welcome.
+>
+> **状态说明（仓库仍在构建/重构中）：** 当前仓库处于架构重构阶段，暂时**不要**提交新增/更新论文内容（`papers/` 目录）的 PR。欢迎提交与**仓库架构**、**脚本**、**模板**、**工具链**相关的 PR。
+
 **How to contribute:** See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## LLM prompt example (web UI)

@@ -1,0 +1,10 @@
+{
+  "title": "Accelerating Encrypted Execution via NTT in Homomorphic Encryption",
+  "authors": "Park et al.",
+  "year": 2021,
+  "venue": "MICRO",
+  "slug": "accelerating-encrypted-execution-ntt",
+  "url": "https://doi.org/10.1145/3466752.3480070",
+  "doi": "10.1145/3466752.3480070",
+  "key_innovation": "Optimized NTT hardware units with efficient memory access patterns"
+}

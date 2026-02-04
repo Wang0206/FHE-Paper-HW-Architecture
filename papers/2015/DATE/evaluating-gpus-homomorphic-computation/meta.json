@@ -1,0 +1,10 @@
+{
+  "title": "Evaluating the Potential of Graphics Processors for Homomorphic Computation",
+  "authors": "Wang et al.",
+  "year": 2015,
+  "venue": "DATE",
+  "slug": "evaluating-gpus-homomorphic-computation",
+  "url": "https://doi.org/10.7873/DATE.2015.0645",
+  "doi": "10.7873/DATE.2015.0645",
+  "key_innovation": "GPU parallelization strategies for homomorphic operations"
+}

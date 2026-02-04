@@ -1,0 +1,10 @@
+{
+  "title": "ARK: Fully Homomorphic Encryption Accelerator with Runtime Data Generation and Inter-Operation Key Reuse",
+  "authors": "Yoo et al.",
+  "year": 2023,
+  "venue": "MICRO",
+  "slug": "ark-runtime-data-generation-key-reuse",
+  "url": "https://doi.org/10.1145/3613424.3614294",
+  "doi": "10.1145/3613424.3614294",
+  "key_innovation": "Runtime key generation and inter-operation key reuse to reduce memory overhead"
+}

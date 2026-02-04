@@ -1,0 +1,10 @@
+{
+  "title": "CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on Encrypted Data",
+  "authors": "Feldmann et al.",
+  "year": 2023,
+  "venue": "HPCA",
+  "slug": "craterlake-unbounded-encrypted-computation",
+  "url": "https://doi.org/10.1109/HPCA56546.2023.10071072",
+  "doi": "10.1109/HPCA56546.2023.10071072",
+  "key_innovation": "Function unit for modular arithmetic and slot-aware scratchpad memory management"
+}

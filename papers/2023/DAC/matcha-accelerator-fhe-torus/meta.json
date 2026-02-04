@@ -1,0 +1,10 @@
+{
+  "title": "MATCHA: A Fast and Energy-Efficient Accelerator for Fully Homomorphic Encryption over the Torus",
+  "authors": "Kim et al.",
+  "year": 2023,
+  "venue": "DAC",
+  "slug": "matcha-accelerator-fhe-torus",
+  "url": "https://doi.org/10.1109/DAC56929.2023.10247826",
+  "doi": "10.1109/DAC56929.2023.10247826",
+  "key_innovation": "Torus-based FHE with optimized polynomial multiplication and bootstrapping"
+}

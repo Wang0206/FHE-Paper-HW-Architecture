@@ -41,6 +41,7 @@ Return the two outputs clearly separated, labeled exactly:
 
 - [Repository Layout](#repository-layout)
 - [Index (by Year)](#index-by-year)
+  - [2026](#2026)
   - [2024](#2024)
   - [2023](#2023)
   - [2022](#2022)
@@ -56,6 +57,7 @@ Return the two outputs clearly separated, labeled exactly:
   - [DAC](#dac)
   - [DATE](#date)
   - [HPCA](#hpca)
+  - [IEEE-TCAD](#ieee-tcad)
   - [ISCA](#isca)
   - [MICRO](#micro)
 - [Contributing](#contributing)
@@ -271,7 +273,6 @@ Run: python3 scripts/build_index.py
   **Authors:** Wang et al.  
   **Link:** https://doi.org/10.7873/DATE.2015.0645  
   **Key Innovation:** GPU parallelization strategies for homomorphic operations
-
 
 # Index (by Venue)
 

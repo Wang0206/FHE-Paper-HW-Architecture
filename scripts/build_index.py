@@ -18,6 +18,8 @@ ROOT_README = REPO_ROOT / "README.md"
 INDEX_START = "<!-- INDEX:START -->"
 INDEX_END = "<!-- INDEX:END -->"
 
+TOC_HEADER = "## Table of Contents"
+
 
 @dataclass(frozen=True)
 class Paper:
@@ -147,6 +149,36 @@ def render_index(papers: List[Paper]) -> str:
     return "\n".join(parts).rstrip() + "\n"
 
 
+def render_toc(papers: List[Paper]) -> str:
+    years = sorted({p.year for p in papers}, reverse=True)
+    venues = sorted({p.venue for p in papers})
+
+    lines: List[str] = []
+    lines.append("- [Repository Layout](#repository-layout)")
+
+    lines.append("- [Index (by Year)](#index-by-year)")
+    for y in years:
+        lines.append(f"  - [{y}](#{y})")
+
+    lines.append("- [Index (by Venue)](#index-by-venue)")
+    for v in venues:
+        lines.append(f"  - [{v}](#{slugify_anchor(v)})")
+
+    lines.append("- [Contributing](#contributing)")
+    lines.append("- [License](#license)")
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def slugify_anchor(text: str) -> str:
+    # Best-effort GitHub-style anchor slug for typical venue strings.
+    s = text.strip().lower()
+    s = re.sub(r"[^a-z0-9\s-]", "", s)
+    s = re.sub(r"\s+", "-", s)
+    s = re.sub(r"-+", "-", s)
+    return s
+
+
 def replace_index_block(readme_text: str, new_block: str) -> str:
     if INDEX_START not in readme_text or INDEX_END not in readme_text:
         raise RuntimeError("Root README is missing INDEX markers.")
@@ -158,6 +190,23 @@ def replace_index_block(readme_text: str, new_block: str) -> str:
     return pattern.sub(replacement, readme_text, count=1)
 
 
+def replace_toc_section(readme_text: str, new_toc: str) -> str:
+    if TOC_HEADER not in readme_text:
+        raise RuntimeError("Root README is missing the Table of Contents header.")
+
+    # Replace everything between the TOC header and the next H2 header.
+    pattern = re.compile(
+        r"(^## Table of Contents[ \t]*\n)(.*?)(?=^##\s)",
+        flags=re.DOTALL | re.MULTILINE,
+    )
+    m = pattern.search(readme_text)
+    if not m:
+        raise RuntimeError("Failed to locate the Table of Contents section to replace.")
+
+    replacement = f"{m.group(1)}\n{new_toc.rstrip()}\n\n"
+    return pattern.sub(replacement, readme_text, count=1)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="Do not write; fail if README would change")
@@ -165,13 +214,17 @@ def main() -> None:
 
     papers = collect_papers()
     new_block = render_index(papers)
+    new_toc = render_toc(papers)
 
     current = ROOT_README.read_text(encoding="utf-8")
     updated = replace_index_block(current, new_block)
+    updated = replace_toc_section(updated, new_toc)
 
     if args.check:
         if updated != current:
-            raise SystemExit("README.md index is out of date. Run: python3 scripts/build_index.py")
+            raise SystemExit(
+                "README.md (TOC and/or index) is out of date. Run: python3 scripts/build_index.py"
+            )
         return
 
     ROOT_README.write_text(updated, encoding="utf-8")

@@ -1,0 +1,25 @@
+{
+  "title": "CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on Encrypted Data",
+  "authors": "Nikola Samardzic et al.",
+  "affiliations": "Massachusetts Institute of Technology",
+  "year": "2022",
+  "venue": "ISCA",
+  "slug": "crater-lake",
+  "url": "https://dl.acm.org/doi/10.1145/3470496.3527393",
+  "key_innovation": "The first FHE accelerator to enable efficient unbounded multiplicative depth by introducing a hardware architecture and compiler optimized for large ciphertexts and the boosted keyswitching algorithm.",
+  "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3470496.3527393",
+  "hardware": [
+    "ASIC"
+  ],
+  "schemes": [
+    "CKKS",
+    "BGV",
+    "GSW"
+  ],
+  "tags": [
+    "Fully Homomorphic Encryption",
+    "Hardware Acceleration",
+    "Bootstrapping",
+    "Privacy-Preserving Computing"
+  ]
+}

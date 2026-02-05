@@ -11,9 +11,9 @@ A comprehensive curated list of research papers on Fully Homomorphic Encryption 
 
 **How to contribute:** See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## LLM prompt example (web UI)
+## LLM prompt example
 
-If you use a web-based LLM (ChatGPT/Claude/etc.), you can upload the paper PDF and ask it to fill in our templates.
+If you use a LLM (ChatGPT/Claude/etc.), you can upload the paper PDF and ask it to fill in our templates.
 
 Copy/paste this prompt and attach the PDF:
 
@@ -30,7 +30,7 @@ Output B: README.md (Markdown)
 - Do NOT paste the paper verbatim. Write your own summary.
 - Results: only include numeric results if they appear in the PDF; otherwise write TODO.
 
-Output copyable versions of .json and .md content，do not output the reference source structure in the md file.
+Output copyable versions of .json and .md code，do not output the reference source structure in the md file.
 Return the two outputs clearly separated, labeled exactly:
 --- meta.json ---
 {...}
@@ -137,12 +137,6 @@ Run: python3 scripts/build_index.py
   **Affiliations:** TODO: Affiliations (institutions / companies)  
   **Key Innovation:** Torus-based FHE with optimized polynomial multiplication and bootstrapping
 
-### HPCA 2023
-- **Title:** [CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on Encrypted Data](papers/2023/HPCA/craterlake-unbounded-encrypted-computation/README.md)  
-  **Authors:** Feldmann et al.  
-  **Affiliations:** TODO: Affiliations (institutions / companies)  
-  **Key Innovation:** Function unit for modular arithmetic and slot-aware scratchpad memory management
-
 ### MICRO 2023
 - **Title:** [ARK: Fully Homomorphic Encryption Accelerator with Runtime Data Generation and Inter-Operation Key Reuse](papers/2023/MICRO/ark-runtime-data-generation-key-reuse/README.md)  
   **Authors:** Yoo et al.  
@@ -167,6 +161,12 @@ Run: python3 scripts/build_index.py
   **Authors:** Sav et al.  
   **Affiliations:** TODO: Affiliations (institutions / companies)  
   **Key Innovation:** FPGA-based bootstrapping with optimized NTT and automorphism operations
+
+### ISCA 2022
+- **Title:** [CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on Encrypted Data](papers/2022/ISCA/crater-lake/README.md)  
+  **Authors:** Nikola Samardzic et al.  
+  **Affiliations:** Massachusetts Institute of Technology  
+  **Key Innovation:** The first FHE accelerator to enable efficient unbounded multiplicative depth by introducing a hardware architecture and compiler optimized for large ciphertexts and the boosted keyswitching algorithm.
 
 ### MICRO 2022
 - **Title:** [Phantom: General-Purpose Tunable Privacy-Preserving Neural Network Inference Using Homomorphic Encryption](papers/2022/MICRO/phantom-pp-nn-inference/README.md)  
@@ -382,12 +382,6 @@ Run: python3 scripts/build_index.py
 
 ## HPCA
 
-### HPCA 2023
-- **Title:** [CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on Encrypted Data](papers/2023/HPCA/craterlake-unbounded-encrypted-computation/README.md)  
-  **Authors:** Feldmann et al.  
-  **Affiliations:** TODO: Affiliations (institutions / companies)  
-  **Key Innovation:** Function unit for modular arithmetic and slot-aware scratchpad memory management
-
 ### HPCA 2022
 - **Title:** [BumbleBee: Secure Two-party Inference Framework for Large Transformers](papers/2022/HPCA/bumblebee-two-party-transformers/README.md)  
   **Authors:** Lu et al.  
@@ -439,6 +433,12 @@ Run: python3 scripts/build_index.py
   **Authors:** Feldmann et al.  
   **Affiliations:** TODO: Affiliations (institutions / companies)  
   **Key Innovation:** Specialized bootstrapping acceleration with optimized modular arithmetic units
+
+### ISCA 2022
+- **Title:** [CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on Encrypted Data](papers/2022/ISCA/crater-lake/README.md)  
+  **Authors:** Nikola Samardzic et al.  
+  **Affiliations:** Massachusetts Institute of Technology  
+  **Key Innovation:** The first FHE accelerator to enable efficient unbounded multiplicative depth by introducing a hardware architecture and compiler optimized for large ciphertexts and the boosted keyswitching algorithm.
 
 
 ## MICRO

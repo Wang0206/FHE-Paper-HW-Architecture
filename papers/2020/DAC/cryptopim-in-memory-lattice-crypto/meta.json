@@ -1,10 +1,10 @@
 {
   "title": "CryptoPIM: In-Memory Acceleration for Lattice-based Cryptographic Hardware",
   "authors": "Ahn et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2020,
   "venue": "DAC",
   "slug": "cryptopim-in-memory-lattice-crypto",
   "url": "https://doi.org/10.1109/DAC18072.2020.9218730",
-  "doi": "10.1109/DAC18072.2020.9218730",
   "key_innovation": "Processing-in-memory architecture for lattice-based cryptography including FHE"
 }

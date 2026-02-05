@@ -1,10 +1,10 @@
 {
   "title": "An Efficient Homomorphic Comparison Hardware for Resource-Constrained Devices",
   "authors": "Morshed et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2019,
   "venue": "DAC",
   "slug": "homomorphic-comparison-hardware",
   "url": "https://doi.org/10.1145/3316781.3317889",
-  "doi": "10.1145/3316781.3317889",
   "key_innovation": "Lightweight comparison operations on encrypted data for edge devices"
 }

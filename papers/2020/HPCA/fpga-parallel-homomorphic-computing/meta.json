@@ -1,10 +1,10 @@
 {
   "title": "FPGA-based High-Performance Parallel Architecture for Homomorphic Computing on Encrypted Data",
   "authors": "Turan et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2020,
   "venue": "HPCA",
   "slug": "fpga-parallel-homomorphic-computing",
   "url": "https://doi.org/10.1109/HPCA47549.2020.00047",
-  "doi": "10.1109/HPCA47549.2020.00047",
   "key_innovation": "Parallel processing units with efficient interconnect for FHE operations"
 }

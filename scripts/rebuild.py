@@ -18,7 +18,9 @@ def run(cmd: list[str]) -> None:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Validate repo and rebuild the root index in one command")
+    ap = argparse.ArgumentParser(
+        description="Validate repo and rebuild the root README (TOC + index) in one command"
+    )
     ap.add_argument("--check", action="store_true", help="Do not write; fail if README index would change")
     args = ap.parse_args()
 

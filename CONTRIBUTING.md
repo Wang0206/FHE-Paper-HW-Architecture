@@ -38,7 +38,7 @@ Required keys:
 
 Recommended keys:
 
-- `doi`
+- `affiliations` (institutions / companies)
 - `pdf_url`
 - `hardware` (e.g., `["ASIC", "FPGA", "GPU", "PIM", "Chiplet"]`)
 - `schemes` (e.g., `["TFHE", "CKKS", "BFV", "FV"]`)

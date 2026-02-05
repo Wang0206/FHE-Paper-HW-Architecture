@@ -1,10 +1,10 @@
 {
   "title": "Hardware Acceleration of Fully Homomorphic Encryption",
   "authors": "Roy et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2018,
   "venue": "DATE",
   "slug": "hardware-acceleration-fhe",
   "url": "https://doi.org/10.1109/DATE.2018.8342013",
-  "doi": "10.1109/DATE.2018.8342013",
   "key_innovation": "Modular arithmetic accelerator with optimized polynomial operations"
 }

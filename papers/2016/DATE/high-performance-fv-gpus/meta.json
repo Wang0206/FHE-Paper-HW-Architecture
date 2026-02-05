@@ -1,10 +1,10 @@
 {
   "title": "High-Performance FV Somewhat Homomorphic Encryption on GPUs",
   "authors": "Dai et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2016,
   "venue": "DATE",
   "slug": "high-performance-fv-gpus",
   "url": "https://doi.org/10.3850/9783981537079_0855",
-  "doi": "10.3850/9783981537079_0855",
   "key_innovation": "GPU-based acceleration of Fan-Vercauteren scheme with optimized memory management"
 }

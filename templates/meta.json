@@ -1,16 +1,20 @@
 {
   "title": "TODO: Paper title",
   "authors": "TODO: Authors (e.g., 'Kim et al.')",
+  "affiliations": "TODO: Affiliations (Just the first affiliation is needed.)",
   "year": 2024,
-  "venue": "TODO: One of ISCA/MICRO/HPCA/ASPLOS/DAC/DATE/FPGA",
+  "venue": "TODO: Such as ISCA/MICRO/HPCA/ASPLOS/DAC/DATE/FPGA",
   "slug": "todo-lowercase-kebab-case",
-  "url": "TODO: DOI or publisher URL",
+  "url": "TODO: publisher URL",
   "key_innovation": "TODO: 1–2 sentence key innovation",
-
-  "doi": "TODO: DOI string (optional)",
   "pdf_url": "TODO: public PDF URL (optional)",
-
-  "hardware": ["TODO: ASIC/FPGA/GPU/PIM/Chiplet (optional)"],
-  "schemes": ["TODO: TFHE/CKKS/BFV/FV/etc. (optional)"],
-  "tags": ["TODO: keywords (optional)"]
+  "hardware": [
+    "TODO: ASIC/FPGA/GPU/PIM/Chiplet (optional)"
+  ],
+  "schemes": [
+    "TODO: TFHE/CKKS/BFV/FV/etc. (optional)"
+  ],
+  "tags": [
+    "TODO: keywords (optional)"
+  ]
 }

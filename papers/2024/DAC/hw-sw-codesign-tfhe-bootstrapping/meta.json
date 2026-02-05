@@ -1,10 +1,10 @@
 {
   "title": "Hardware-Software Co-Design for TFHE Bootstrapping",
   "authors": "Zhang et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2024,
   "venue": "DAC",
   "slug": "hw-sw-codesign-tfhe-bootstrapping",
   "url": "https://doi.org/10.1145/3649329.3657389",
-  "doi": "10.1145/3649329.3657389",
   "key_innovation": "Co-designed TFHE bootstrapping with custom instruction set extensions"
 }

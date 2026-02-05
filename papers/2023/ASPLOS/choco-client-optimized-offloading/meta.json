@@ -1,10 +1,10 @@
 {
   "title": "CHOCO: Client-Optimized Algorithms and Acceleration for Encrypted Compute Offloading",
   "authors": "Tan et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2023,
   "venue": "ASPLOS",
   "slug": "choco-client-optimized-offloading",
   "url": "https://doi.org/10.1145/3575693.3578835",
-  "doi": "10.1145/3575693.3578835",
   "key_innovation": "Client-side preprocessing and optimized packing schemes for reduced computation"
 }

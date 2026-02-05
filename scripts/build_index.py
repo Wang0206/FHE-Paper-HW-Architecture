@@ -25,13 +25,13 @@ TOC_HEADER = "## Table of Contents"
 class Paper:
     title: str
     authors: str
+    affiliation: str | None
     year: int
     venue: str
     url: str
     key_innovation: str
     slug: str
     path: Path
-    doi: str | None = None
 
 
 def iter_meta_files() -> Iterable[Path]:
@@ -51,17 +51,38 @@ def load_paper(meta_path: Path) -> Paper:
     venue = str(data["venue"]).strip()
     slug = str(data["slug"]).strip()
 
+    affiliation = first_affiliation(data.get("affiliations"))
+
     return Paper(
         title=str(data["title"]).strip(),
         authors=str(data["authors"]).strip(),
+        affiliation=affiliation,
         year=year,
         venue=venue,
         url=str(data["url"]).strip(),
         key_innovation=str(data["key_innovation"]).strip(),
         slug=slug,
-        doi=str(data.get("doi")).strip() if data.get("doi") else None,
         path=meta_path.parent,
     )
+
+
+def first_affiliation(value: object) -> str | None:
+    if value is None:
+        return None
+    if isinstance(value, list):
+        items = [str(v).strip() for v in value if str(v).strip()]
+        return items[0] if items else None
+    if isinstance(value, str):
+        s = value.strip()
+        if not s:
+            return None
+        # If multiple affiliations are provided as a single string, allow ';' or '|' as separators.
+        for sep in (";", "|"):
+            if sep in s:
+                head = s.split(sep, 1)[0].strip()
+                return head or None
+        return s
+    return str(value).strip() or None
 
 
 def collect_papers() -> List[Paper]:
@@ -74,6 +95,10 @@ def collect_papers() -> List[Paper]:
 def paper_rel_link(p: Paper) -> str:
     rel = p.path.relative_to(REPO_ROOT).as_posix()
     return f"{rel}/README.md"
+
+
+def is_todo_value(s: str) -> bool:
+    return s.strip().lower().startswith("todo")
 
 
 def render_by_year(papers: List[Paper]) -> str:
@@ -94,10 +119,11 @@ def render_by_year(papers: List[Paper]) -> str:
             venue_papers = sorted(by_venue[venue], key=lambda x: x.title.lower())
             for p in venue_papers:
                 link = paper_rel_link(p)
+                aff_line = f"  **Affiliations:** {p.affiliation}  \n" if p.affiliation else ""
                 lines.append(
                     f"- **Title:** [{p.title}]({link})  \n"
                     f"  **Authors:** {p.authors}  \n"
-                    f"  **Link:** {p.url}  \n"
+                    f"{aff_line}"
                     f"  **Key Innovation:** {p.key_innovation}"
                 )
             lines.append("")
@@ -124,10 +150,11 @@ def render_by_venue(papers: List[Paper]) -> str:
             year_papers = sorted(by_year[year], key=lambda x: x.title.lower())
             for p in year_papers:
                 link = paper_rel_link(p)
+                aff_line = f"  **Affiliations:** {p.affiliation}  \n" if p.affiliation else ""
                 lines.append(
                     f"- **Title:** [{p.title}]({link})  \n"
                     f"  **Authors:** {p.authors}  \n"
-                    f"  **Link:** {p.url}  \n"
+                    f"{aff_line}"
                     f"  **Key Innovation:** {p.key_innovation}"
                 )
             lines.append("")

@@ -1,10 +1,10 @@
 {
   "title": "FAB: An FPGA-based Accelerator for Bootstrappable Fully Homomorphic Encryption",
   "authors": "Sav et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2022,
   "venue": "HPCA",
   "slug": "fab-fpga-bootstrappable-fhe",
   "url": "https://doi.org/10.1109/HPCA53966.2022.00021",
-  "doi": "10.1109/HPCA53966.2022.00021",
   "key_innovation": "FPGA-based bootstrapping with optimized NTT and automorphism operations"
 }

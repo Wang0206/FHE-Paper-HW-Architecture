@@ -1,10 +1,10 @@
 {
   "title": "F1: A Fast and Programmable Accelerator for Fully Homomorphic Encryption",
   "authors": "Samardzic et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2021,
   "venue": "HPCA",
   "slug": "f1-programmable-fhe-accelerator",
   "url": "https://doi.org/10.1109/HPCA51647.2021.00015",
-  "doi": "10.1109/HPCA51647.2021.00015",
   "key_innovation": "Programmable datapath with flexible NTT engine and unified key-switching unit"
 }

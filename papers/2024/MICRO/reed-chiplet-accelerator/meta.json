@@ -1,10 +1,10 @@
 {
   "title": "REED: Chiplet-Based Accelerator for Fully Homomorphic Encryption",
   "authors": "Kim et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2024,
   "venue": "MICRO",
   "slug": "reed-chiplet-accelerator",
   "url": "https://doi.org/10.1145/3613424.3623779",
-  "doi": "10.1145/3613424.3623779",
   "key_innovation": "Chiplet-based architecture with inter-chiplet communication optimization for FHE operations"
 }

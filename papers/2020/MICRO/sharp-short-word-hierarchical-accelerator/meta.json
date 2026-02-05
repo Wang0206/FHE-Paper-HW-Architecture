@@ -1,10 +1,10 @@
 {
   "title": "SHARP: A Short-Word Hierarchical Accelerator for Robust and Practical Fully Homomorphic Encryption",
   "authors": "Chielle et al.",
+  "affiliations": "TODO: Affiliations (institutions / companies)",
   "year": 2020,
   "venue": "MICRO",
   "slug": "sharp-short-word-hierarchical-accelerator",
   "url": "https://doi.org/10.1109/MICRO50266.2020.00078",
-  "doi": "10.1109/MICRO50266.2020.00078",
   "key_innovation": "Short-word arithmetic optimization for resource-efficient FHE computation"
 }

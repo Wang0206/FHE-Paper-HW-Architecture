@@ -1,0 +1,26 @@
+
+{
+  "title": "Ares: High Performance Near-Storage Accelerator for FHE-based Private Set Intersection",
+  "authors": "Haoxuan Wang, Yinghao Yang, Jinkai Zhang, Hang Lu, Xiaowei Li",
+  "affiliations": "Institute of Computing Technology, Chinese Academy of Sciences",
+  "year": 2025,
+  "venue": "DAC",
+  "slug": "ares-fhe-psi-accelerator",
+  "url": "https://ieeexplore.ieee.org/document/11133120",
+  "key_innovation": "A near-storage FPGA accelerator for FHE-based PSI that introduces Lazy Relinearization to remove redundant computations and decouples memory-bound vs. compute-bound tasks.",
+  "hardware": [
+    "FPGA",
+    "SmartSSD",
+    "Near-Storage Processing"
+  ],
+  "schemes": [
+    "BFV"
+  ],
+  "tags": [
+    "FHE",
+    "Private Set Intersection",
+    "Near-Data Processing",
+    "Hardware Acceleration",
+    "Lazy Relinearization"
+  ]
+}

@@ -1,6 +1,7 @@
 # {{title}}
 
 **Authors:** {{authors}}  \
+**Affiliations:** {{affiliations}}  \
 **Venue/Year:** {{venue}} {{year}}  \
 **URL:** {{url}}  \
 {{doi_line}}{{pdf_line}}
@@ -9,7 +10,7 @@
 
 {{key_innovation}}
 
-## Repo Summary
+## Paper Summary
 
 - TODO: 3–6 bullets summarizing what the paper achieves.
 

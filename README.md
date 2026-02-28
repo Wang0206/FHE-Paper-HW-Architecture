@@ -110,12 +110,6 @@ Run: python3 scripts/build_index.py
   **Affiliations:** TODO: Affiliations (institutions / companies)  
   **Key Innovation:** Co-designed TFHE bootstrapping with custom instruction set extensions
 
-### ISCA 2024
-- **Title:** [BTS: An Accelerator for Bootstrappable Fully Homomorphic Encryption](papers/2024/ISCA/bts-accelerator-bootstrappable-fhe/README.md)  
-  **Authors:** Feldmann et al.  
-  **Affiliations:** TODO: Affiliations (institutions / companies)  
-  **Key Innovation:** Specialized bootstrapping acceleration with optimized modular arithmetic units
-
 ### MICRO 2024
 - **Title:** [REED: Chiplet-Based Accelerator for Fully Homomorphic Encryption](papers/2024/MICRO/reed-chiplet-accelerator/README.md)  
   **Authors:** Kim et al.  
@@ -163,6 +157,10 @@ Run: python3 scripts/build_index.py
   **Key Innovation:** FPGA-based bootstrapping with optimized NTT and automorphism operations
 
 ### ISCA 2022
+- **Title:** [BTS: An Accelerator for Bootstrappable Fully Homomorphic Encryption](papers/2022/ISCA/bts-accelerator-bootstrappable-fhe/README.md)  
+  **Authors:** Sangpyo Kim et al.  
+  **Affiliations:** Seoul National University, Seoul, South Korea  
+  **Key Innovation:** Specialized bootstrapping acceleration with optimized modular arithmetic units
 - **Title:** [CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on Encrypted Data](papers/2022/ISCA/crater-lake/README.md)  
   **Authors:** Nikola Samardzic et al.  
   **Affiliations:** Massachusetts Institute of Technology  
@@ -428,13 +426,11 @@ Run: python3 scripts/build_index.py
 
 ## ISCA
 
-### ISCA 2024
-- **Title:** [BTS: An Accelerator for Bootstrappable Fully Homomorphic Encryption](papers/2024/ISCA/bts-accelerator-bootstrappable-fhe/README.md)  
-  **Authors:** Feldmann et al.  
-  **Affiliations:** TODO: Affiliations (institutions / companies)  
-  **Key Innovation:** Specialized bootstrapping acceleration with optimized modular arithmetic units
-
 ### ISCA 2022
+- **Title:** [BTS: An Accelerator for Bootstrappable Fully Homomorphic Encryption](papers/2022/ISCA/bts-accelerator-bootstrappable-fhe/README.md)  
+  **Authors:** Sangpyo Kim et al.  
+  **Affiliations:** Seoul National University, Seoul, South Korea  
+  **Key Innovation:** Specialized bootstrapping acceleration with optimized modular arithmetic units
 - **Title:** [CraterLake: A Hardware Accelerator for Efficient Unbounded Computation on Encrypted Data](papers/2022/ISCA/crater-lake/README.md)  
   **Authors:** Nikola Samardzic et al.  
   **Affiliations:** Massachusetts Institute of Technology  

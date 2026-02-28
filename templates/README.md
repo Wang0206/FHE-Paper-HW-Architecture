@@ -6,6 +6,8 @@
 **URL:** {{url}}  \
 {{doi_line}}{{pdf_line}}
 
+**NOTE:** This README was generated with the assistance of an LLM, so it may contain errors. Welcome to open an Issue or PR.
+
 ## Key Innovation
 
 {{key_innovation}}

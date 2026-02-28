@@ -1,13 +1,14 @@
 # BTS: An Accelerator for Bootstrappable Fully Homomorphic Encryption
 
-**Authors:** Feldmann et al.  \
-**Venue/Year:** ISCA 2024  \
-**URL:** https://doi.org/10.1109/ISCA59077.2024.00053  \
-**DOI:** 10.1109/ISCA59077.2024.00053
+**Authors:** Sangpyo Kim et al.  \
+**Affiliations:** Seoul National University, Seoul, South Korea  \
+**Venue/Year:** ISCA 2022  \
+**URL:** https://dl.acm.org/doi/10.1145/3470496.3527415
+
 
 ## Key Innovation
 
-Specialized bootstrapping acceleration with optimized modular arithmetic units
+- TODO
 
 ## Repo Summary
 

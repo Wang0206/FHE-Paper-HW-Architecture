@@ -1,10 +1,10 @@
 {
   "title": "BTS: An Accelerator for Bootstrappable Fully Homomorphic Encryption",
-  "authors": "Feldmann et al.",
-  "affiliations": "TODO: Affiliations (institutions / companies)",
-  "year": 2024,
+  "authors": "Sangpyo Kim et al.",
+  "affiliations": "Seoul National University, Seoul, South Korea",
+  "year": 2022,
   "venue": "ISCA",
   "slug": "bts-accelerator-bootstrappable-fhe",
-  "url": "https://doi.org/10.1109/ISCA59077.2024.00053",
+  "url": "https://dl.acm.org/doi/10.1145/3470496.3527415",
   "key_innovation": "Specialized bootstrapping acceleration with optimized modular arithmetic units"
 }

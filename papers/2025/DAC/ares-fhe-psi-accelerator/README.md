@@ -2,8 +2,8 @@
 
 **Authors:** Haoxuan Wang, Yinghao Yang, Jinkai Zhang, Hang Lu, Xiaowei Li  
 **Affiliations:** Institute of Computing Technology, Chinese Academy of Sciences  
-**Venue/Year:** DAC 2024  
-**URL:** https://ieeexplore.ieee.org/document/10609384  
+**Venue/Year:** DAC 2025  
+**URL:** https://ieeexplore.ieee.org/document/11133120  
 
 ## Key Innovation
 
@@ -48,11 +48,10 @@ Ares is a hardware-software co-designed accelerator for FHE-based Private Set In
 ## BibTeX
 
 ```bibtex
-@inproceedings{wang2024ares,
-  title={Ares: High Performance Near-Storage Accelerator for FHE-based Private Set Intersection},
+@INPROCEEDINGS{11133120,
   author={Wang, Haoxuan and Yang, Yinghao and Zhang, Jinkai and Lu, Hang and Li, Xiaowei},
-  booktitle={2024 61st ACM/IEEE Design Automation Conference (DAC)},
-  pages={1--6},
-  year={2024},
-  organization={IEEE}
-}
+  booktitle={2025 62nd ACM/IEEE Design Automation Conference (DAC)}, 
+  title={Ares: High Performance Near-Storage Accelerator for FHE-based Private Set Intersection}, 
+  year={2025},
+  pages={1-6}
+  }
